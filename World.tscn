@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World.gd" type="Script" id=1]
+
+[node name="World" type="Spatial"]
+script = ExtResource( 1 )
+mapSeed = "example"
+
+[node name="Gridholder" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.824235, 0.566248, 0, -0.566248, 0.824235, 0, 18.2729, 7.20408 )
+current = true

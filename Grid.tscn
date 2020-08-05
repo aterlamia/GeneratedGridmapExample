@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://meshes.tres" type="MeshLibrary" id=1]
+
+[node name="Map" type="Spatial"]
+
+[node name="Floor" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_scale = 2.002
+data = {
+"cells": PoolIntArray( 0, 0, 136, 65535, 0, -1610612600, 0, 1, -1610612602, 65535, 1, 134, 0, 65535, 136, 65535, 65535, -1610612600 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="Objects" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_scale = 2.002
+data = {
+"cells": PoolIntArray( 0, 0, -1610612600, 65535, 0, 121, 0, 1, 134, 65535, 1, 134, 0, 65535, 121, 65535, 65535, 121 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
